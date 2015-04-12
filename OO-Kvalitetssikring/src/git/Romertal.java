@@ -1,8 +1,10 @@
 package git;
 
 public class Romertal {
+	
+	private String L, V;
 
-	public Romertal(String string, String string2) {
+	public Romertal(String a, String b) {
 	}
 
 	public String getFacit() {
