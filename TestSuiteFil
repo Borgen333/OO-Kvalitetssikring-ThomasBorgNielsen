@@ -1,0 +1,37 @@
+TestSuite til Kvalitetssikring:
+
+Test case - 1:
+
+Input: a = I, b = IIII                      Forventet Output: V
+
+Test case - 2:
+
+Input: a = X, b = XXXX                      Forventet Output: L
+
+Test case - 3:
+
+Input: a =  C, b = CCCC                     Forventet Output: D
+
+Test case - 4:
+
+Input: a = V, b = V                         Forventet Output: X
+
+Test case - 5:
+
+Input: a = L, b = L                         Forventet Output: C
+
+Test case - 6:
+
+Input: a = D, b = D                         Forventet Output: M
+
+Test case - 7:
+
+Input: a = C, b = D                         Forventet Output: CCCC
+
+Test case - 8:
+
+Input: a = MDCCCC, b = XXXXVIIII            Forventet Output: MDCCCCXXXXVIIII
+
+Test case - 9:
+
+Input: a = MCCXVII, b = DCCCCLXI			Forventet Output: MMCLXXVIII
