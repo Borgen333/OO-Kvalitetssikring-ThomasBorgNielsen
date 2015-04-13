@@ -9,19 +9,18 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class TestAfRomertal {
-	
-	private Romertal romertal;
-	
-	
+
 	@Test
 	public void testAfOverFireIer() {
-		romertal = new Romertal("I", "IIII");
+		Romertal romertal = new Romertal("I", "IIII");
+		
 		assertEquals("V", romertal.getFacit());
 	}
 	
 	@Test
 	public void testAfOverFireXer() {
-		romertal = new Romertal("X", "XXXX");
+		Romertal romertal = new Romertal("X", "XXXX");
+		
 		assertEquals("L", romertal.getFacit());
 	}
 
