@@ -13,5 +13,7 @@ public class TestAfRomertal {
 	@Test
 	public void testAfOverFireIer() {
 		Romertal romertal = new Romertal("I", "IIII");
+		
+		assertEquals("V", romertal.getFacit());
 	}
 }
