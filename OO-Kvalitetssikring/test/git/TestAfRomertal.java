@@ -49,6 +49,6 @@ public class TestAfRomertal {
 	public void testAfOverEnDer() {
 		Romertal romertal = new Romertal("D", "D");
 		
-		assertEquals("D", romertal.getFacit());
+		assertEquals("M", romertal.getFacit());
 	}
 }
