@@ -29,6 +29,8 @@ public class Romertal {
 		getC();
 		getD();
 		getM();
+//		if(sbM.toString().contains("MMMMM"))
+//			return "Ugyldigt input, prøv igen";
 		return samletSB.append(sbM).append(sbD).append(sbC).append(sbL).append(sbX).append(sbV).append(sbI).toString();
 	}
 
@@ -96,9 +98,15 @@ public class Romertal {
 		for (int i = 0; i < c.length(); i++) {
 			if (c.charAt(i) == 'M')
 				sbM.append("M");
-			if (sbM.indexOf("MM") == 0) {
-				sbM.delete(0, 2);
-				sbM.append("M");
+			if (sbM.indexOf("MMMMM") == 0) {
+				sbI.delete(0, 5);
+				sbV.delete(0, 2);
+				sbX.delete(0, 5);
+				sbL.delete(0, 2);
+				sbC.delete(0, 5);
+				sbD.delete(0, 2);
+				sbM.delete(0, 5);
+				sbM.append("Ugyldigt input, prøv igen");
 			}}
 	}
 }
