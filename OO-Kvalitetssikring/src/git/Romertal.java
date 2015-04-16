@@ -21,6 +21,13 @@ public class Romertal {
 
 	public String getFacit() {
 
+		getI();
+		getX();
+		getC();
+		return samletSB.append(sbD).append(sbC).append(sbL).append(sbX).append(sbV).append(sbI).toString();
+	}
+
+	private void getI() {
 		for (int i = 0; i < c.length(); i++) {
 			if (c.charAt(i) == 'I')
 				sbI.append("I");
@@ -28,7 +35,9 @@ public class Romertal {
 				sbI.delete(0, 5);
 				sbV.append("V");
 			}}
-		
+	}
+
+	private void getX() {
 		for (int i = 0; i < c.length(); i++) {
 			if (c.charAt(i) == 'X')
 				sbX.append("X");
@@ -36,7 +45,9 @@ public class Romertal {
 				sbX.delete(0, 5);
 				sbL.append("L");
 			}}
-		
+	}
+
+	private void getC() {
 		for (int i = 0; i < c.length(); i++) {
 			if (c.charAt(i) == 'C')
 				sbC.append("C");
@@ -44,6 +55,5 @@ public class Romertal {
 				sbC.delete(0, 5);
 				sbD.append("D");
 			}}
-		return samletSB.append(sbD).append(sbC).append(sbL).append(sbX).append(sbV).append(sbI).toString();
 	}
 }
