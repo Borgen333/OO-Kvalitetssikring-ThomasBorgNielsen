@@ -28,7 +28,8 @@ public class Romertal {
 		getL();
 		getC();
 		getD();
-		return samletSB.append(sbD).append(sbC).append(sbL).append(sbX).append(sbV).append(sbI).toString();
+		getM();
+		return samletSB.append(sbM).append(sbD).append(sbC).append(sbL).append(sbX).append(sbV).append(sbI).toString();
 	}
 
 	private void getI() {
@@ -87,6 +88,16 @@ public class Romertal {
 				sbD.append("D");
 			if (sbD.indexOf("DD") == 0) {
 				sbD.delete(0, 2);
+				sbM.append("M");
+			}}
+	}
+	
+	private void getM() {
+		for (int i = 0; i < c.length(); i++) {
+			if (c.charAt(i) == 'M')
+				sbM.append("M");
+			if (sbM.indexOf("MM") == 0) {
+				sbM.delete(0, 2);
 				sbM.append("M");
 			}}
 	}
