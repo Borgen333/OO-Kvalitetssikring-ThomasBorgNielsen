@@ -9,6 +9,8 @@ public class Romertal {
 	private StringBuilder sbX = new StringBuilder("");
 	private StringBuilder sbV = new StringBuilder("");
 	private StringBuilder sbL = new StringBuilder("");
+	private StringBuilder sbC = new StringBuilder(""); 
+	private StringBuilder sbD = new StringBuilder(""); 
 	private StringBuilder samletSB = new StringBuilder("");
 
 	public Romertal(String a, String b) {
@@ -34,6 +36,14 @@ public class Romertal {
 				sbX.delete(0, 5);
 				sbL.append("L");
 			}}
-		return samletSB.append(sbL).append(sbX).append(sbV).append(sbI).toString();
+		
+		for (int i = 0; i < c.length(); i++) {
+			if (c.charAt(i) == 'C')
+				sbC.append("C");
+			if (sbC.indexOf("CCCCC") == 0) {
+				sbC.delete(0, 5);
+				sbD.append("D");
+			}}
+		return samletSB.append(sbD).append(sbC).append(sbL).append(sbX).append(sbV).append(sbI).toString();
 	}
 }
