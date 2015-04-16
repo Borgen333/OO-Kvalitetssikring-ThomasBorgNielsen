@@ -21,6 +21,9 @@ public class Romertal {
 	}
 
 	public String getFacit() {
+		
+		if( a == "" && b == "" )
+			return "Ugyldigt input, prøv igen";
 
 		getI();
 		getV();
