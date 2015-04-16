@@ -24,6 +24,7 @@ public class Romertal {
 		getI();
 		getV();
 		getX();
+		getL();
 		getC();
 		return samletSB.append(sbD).append(sbC).append(sbL).append(sbX).append(sbV).append(sbI).toString();
 	}
@@ -65,6 +66,16 @@ public class Romertal {
 			if (sbV.indexOf("VV") == 0) {
 				sbV.delete(0, 2);
 				sbX.append("X");
+			}}
+	}
+	
+	private void getL() {
+		for (int i = 0; i < c.length(); i++) {
+			if (c.charAt(i) == 'L')
+				sbL.append("L");
+			if (sbL.indexOf("LL") == 0) {
+				sbL.delete(0, 2);
+				sbC.append("C");
 			}}
 	}
 }
