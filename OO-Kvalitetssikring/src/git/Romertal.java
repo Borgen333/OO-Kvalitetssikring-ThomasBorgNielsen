@@ -32,8 +32,6 @@ public class Romertal {
 		getC();
 		getD();
 		getM();
-//		if(sbM.toString().contains("MMMMM"))
-//			return "Ugyldigt input, prøv igen";
 		return samletSB.append(sbM).append(sbD).append(sbC).append(sbL).append(sbX).append(sbV).append(sbI).toString();
 	}
 

@@ -72,4 +72,11 @@ public class TestAfRomertal {
 		
 		assertEquals("MDCCCCXXXXVIIII", romertal.getFacit());
 	}
+	
+	@Test
+	public void testOOInput() {
+		Romertal romertal = new Romertal("MCCXVII", "DCCCCLXI");
+		
+		assertEquals("MMCLXXVIII", romertal.getFacit());
+	}
 }
