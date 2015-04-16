@@ -26,6 +26,7 @@ public class Romertal {
 				sbI.delete(0, 5);
 				sbV.append("V");
 			}}
+		
 		for (int i = 0; i < c.length(); i++) {
 			if (c.charAt(i) == 'X')
 				sbX.append("X");
