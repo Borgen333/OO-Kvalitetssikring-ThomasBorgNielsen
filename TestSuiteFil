@@ -26,12 +26,16 @@ Input: a = D, b = D                         Forventet Output: M
 
 Test case - 7:
 
-Input: a = C, b = D                         Forventet Output: CCCC
+Input: a = MMM, b = DDDD                    Forventet Output: "Ugyldigt input, prøv igen"
 
 Test case - 8:
 
-Input: a = MDCCCC, b = XXXXVIIII            Forventet Output: MDCCCCXXXXVIIII
+Input: a = "", b = ""                       Forventet Output: "Ugyldigt input, prøv igen"
 
 Test case - 9:
+
+Input: a = MDCCCC, b = XXXXVIIII            Forventet Output: MDCCCCXXXXVIIII
+
+Test case - 10:
 
 Input: a = MCCXVII, b = DCCCCLXI			Forventet Output: MMCLXXVIII
