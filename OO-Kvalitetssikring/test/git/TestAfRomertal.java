@@ -30,4 +30,11 @@ public class TestAfRomertal {
 		
 		assertEquals("D", romertal.getFacit());
 	}
+	
+	@Test
+	public void testAfOverEnVer() {
+		Romertal romertal = new Romertal("V", "V");
+		
+		assertEquals("X", romertal.getFacit());
+	}
 }
